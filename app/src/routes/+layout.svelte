@@ -2,6 +2,7 @@
 	import { isPreviewing, VisualEditing } from '@sanity/visual-editing/svelte';
 	import { page } from '$app/stores';
 	import LiveMode from '../components/LiveMode.svelte';
+	import "../app.css";
 </script>
 
 {#if $isPreviewing}
@@ -33,7 +34,7 @@
 					stroke="currentColor"
 					stroke-width="1.2"
 				/></svg
-			> at Sanity
+			> at <a href="www.web24.studio">Studio Web24</a>
 		</p>
 	</footer>
 </div>
@@ -91,7 +92,7 @@
 
 	@media (min-width: 575px) {
 		.container {
-			max-width: var(--max-width-1);
+			
 			padding: 0 var(--space-4);
 		}
 
